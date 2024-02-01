@@ -3,6 +3,8 @@
 
 :root {
   --default-font: 'Poppins', sans-serif;
+  --primary-color:#2374ee;
+  --hero-bg-color:#EBF2FF;
 }
 
 * {
@@ -19,6 +21,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5rem;
+  background-color: var(--hero-bg-color);
 }
 
 .brand {
@@ -30,4 +33,30 @@ header {
 .logo-text {
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+button{
+  border-radius: 25px;
+  border: 2px;
+  padding: 1 rem 2rem;
+}
+
+.button-primary{
+  background-color: var(--primary-color);
+  color: white;
+}
+
+nav{
+  display: flex;
+  gap: 1rem;
+}
+
+/* Hero Styles */
+
+.Hero__Top{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5rem;
+  background-color: var(--hero-bg-color);
+
 }
